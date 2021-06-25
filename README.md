@@ -10,16 +10,18 @@ yarn webpack serve
 
 Uses a simple `require()` to include a single file, which itself has a single file dependency.
 
- - Build time: 350ms
- - Rebuild time: 10ms
- 
+- Build time: 350ms
+- Rebuild time: 10ms
+
 ```bash
 USE_RC=1 yarn webpack serve
 ```
 
 Uses a `require.context()` that only matches the same single file.
 
- - Build time: 6600ms
- - Rebuild time: 2700ms
+- Build time: 9500ms
+- Rebuild time: 7000ms
 
 The project contains 327703 empty JS files that do not match the glob.
+
+Times above are for webpack 5, but times in webpack 4 are similar.
