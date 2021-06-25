@@ -33,6 +33,6 @@ Uses a `require(<pattern>)` that only matches the same single file.
 
 Numbers are just indicative.
 
-The project contains 327703 empty JS files that do not match the glob.
+The project contains ~300,000 empty JS files that do not match the glob.
 
 Times above are for webpack 5, but times in webpack 4 are similar.
